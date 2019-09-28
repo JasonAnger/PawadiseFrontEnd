@@ -1,0 +1,133 @@
+.login {
+    background-color: #fff;
+    position: absolute;
+    top: -70%;
+    left: -48%;
+    height: 78rem;
+    width: 64.2rem;
+    border-radius: 5.2rem;
+    box-shadow: 0 2rem 2rem 0 rgba(0, 0, 0, 0.3);
+
+    &__title {
+        position: relative;
+        top: 5rem; 
+        left: 50%;
+        transform: translateX(-16%);
+        color: #060606;
+        text-transform: capitalize;
+        font-weight: 400;
+        font-size: 5.1rem;
+        text-align: left;
+        margin-bottom: 2rem;
+    }
+
+    &__text-container {
+        position: relative;
+        height: 7.7rem;
+        top: 6rem;
+        width: 59rem;
+    }
+
+    &__attribute {
+        position: relative;
+        color: $color-black;
+        text-transform: none;
+        font-weight: 400;
+        width: 18.7rem;
+        font-size: 2.5rem;
+        left: 2.5rem;
+    }
+
+    &__text-field {
+        position: absolute;
+        top: .2rem;
+        right: 2.2rem;
+        height: 5.2rem;
+        width: 32.3rem;
+        border-radius: 2.4rem;
+        border: solid .15rem #004d61;
+    }
+    &__input {
+        position: absolute;
+        background: transparent;
+        border-top: transparent !important;
+        border-left: transparent !important;
+        border-right: transparent !important;
+        border-bottom: .4rem transparent !important;
+        font-size: 2rem;
+        font-weight: 400;
+        width: 27rem;
+        color: $color-black;
+        top: 1.2rem;
+        left: 3rem;
+        &:required { box-shadow: none }
+    }
+
+    &__btn {
+        position: relative;
+        top: 15rem;
+        background-image: linear-gradient(178deg, #5bd1d7, #3da0a5);
+        color: $color-white;
+        text-transform: none;
+        left: 50%;
+        transform: translateX(-110%);
+        font-size: 2rem;
+        width: 22rem;
+        height: 6rem;
+        border-radius: 30px;
+        cursor: pointer;
+        outline:none;
+    }
+
+    &__suggestion {
+        position: relative;
+        width: 50rem;
+        top: 20rem;
+        left: 50%;
+        transform: translateX(-50%);
+        color: $color-black;
+        text-transform: none;
+
+        & a {
+            color: $color-tertiary-light;
+            text-decoration: none;
+        }
+    }
+
+    &__remember {
+        position: relative;
+        color: $color-black;
+        left: -10rem;
+        top: 6rem;
+        font-size: 2rem;
+        font-weight: 400;
+        text-transform: none;
+    }
+
+    &__close {
+        position: absolute;
+        top: 2rem;
+        right: 3rem;
+        font-size: 3rem;
+        border: none;
+        background-color: #fff;
+        outline: none;
+        cursor: pointer;
+        opacity: 0.3;
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+    &__forget-password {
+        position: relative;
+        text-decoration: none;
+        top: 1vh;
+        left: .7vw;
+
+        &:visited {
+            color: $color-secondary-dark;
+        }
+    }
+
+}

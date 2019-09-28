@@ -1,0 +1,119 @@
+.profile {
+    position: relative;
+    min-height: 110rem;
+    &__title {
+        position: relative;
+        font-size: 3rem;
+        color: #ec1010;
+        margin: 7rem 0;
+        left: 42.3%;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    &__info-sprout {
+        position: relative;
+        left: 10%;
+        height: autp;
+        width: 70vw;
+        max-width: 50%;
+        margin: 10rem 0;
+    }
+
+    &__info--text-container {
+        position: relative;
+        height: 6rem;
+        width: auto;
+        margin-bottom: 3rem;
+    }
+
+    &__attribute {
+        position: absolute;
+        display: inline-block;
+        width: auto;
+        max-width: 30%;
+        font-size: 3rem;
+        color: rgba(42, 42, 42, 0.5);
+    }
+
+    &__value {
+        position: absolute;
+        left: 5rem;
+        top: 1.4rem;
+        font-size: 1.2vw;
+        width: 88%;
+        color: #2a2a2a;
+        background: transparent;
+        border-top: transparent !important;
+        border-left: transparent !important;
+        border-right: transparent !important;
+        border-bottom: .4rem transparent !important;
+
+        &-sprout {
+            position: absolute;
+            right: 0;
+            width: 50vw;
+            max-width: 70%;
+            height: inherit;
+            border-radius: 1.6rem;
+            box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+            border: solid 1px rgba(112, 112, 112, 0.3);
+            background-color: #f3f3f3;
+        }
+    }
+
+    &__save-button {
+        position: absolute;
+        bottom: 7%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 7vw;
+        height: 7vh;
+        border-radius: 2.3rem;
+        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+        background-color: #ff5836;
+        font-size: 2vw;
+        color: $color-white;
+    }
+
+    &__avatar-container {
+        position: absolute;
+        width: 18vw;
+        height: 18vw;
+        border-radius: 50%;
+        overflow: hidden;
+        bottom: 50%;
+        left: 70%;
+    }
+
+    &__avatar {
+        position: relative;
+        z-index: 1;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        left: 50%;
+        top: 50%;
+        object-fit: contain;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+
+    &__change-avatar-button {
+        position: absolute;
+        right: 17vw;
+        bottom: 40%;
+        width: 7vw;
+        max-width: 10%;
+        height: 6rem;
+        border-radius: 12px;
+        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+        background-color: #fbfbfb;
+        font-size: 2rem;
+        color: #2a2a2a;
+        cursor: pointer;
+    }
+}

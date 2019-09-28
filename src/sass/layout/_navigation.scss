@@ -1,0 +1,60 @@
+.navigation {
+    list-style-type: none;
+    &__link {
+        & input:focus, textarea:focus, select:focus{
+            outline: none !important;
+            outline-color: transparent;
+            outline-style: none;
+        }
+      
+        & textarea, select, input, button { 
+            outline: none;
+            outline-color: transparent;
+            outline-style: none; 
+        }
+      
+        &:link,
+        &:visited {
+            display: inline-block;
+            line-height: 3rem;
+            font-size: 2.5rem;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            padding: 1rem 2rem;
+            color: $color-white;
+            text-decoration: none;
+            transition: all .2s;
+            outline: none !important;
+            outline-color: transparent;
+            outline-style: none;
+    }
+
+        &:hover,
+        &:active {
+            background-position: 100%;
+            color: $color-primary;
+            transform: translateX(1.5rem);
+        }
+    }
+
+    &__user {
+        color: $color-secondary-dark;
+        font-size: 2.5rem;
+        font-family: 'Lobster', cursive;
+        pointer-events: none;
+        cursor: default;
+
+        &--attribute {
+           &:visited,
+           &:link {
+               color: $color-primary;
+               margin-left: 2rem;
+           }
+        }
+    }
+
+    &__welcome {
+        margin-bottom: 1.5rem;
+    }
+
+}

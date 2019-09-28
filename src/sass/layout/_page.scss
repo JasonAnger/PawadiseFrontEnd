@@ -1,0 +1,33 @@
+.page {
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    width: 100%;
+    transition: all 1.5s ease-in-out;
+
+    //WHOLE APP CONTAINER
+    &__container {
+      position: relative;
+    }
+
+    &-enter {
+      opacity: 0.01;
+
+      &-active {
+        opacity: 1;
+        transform: opacity 1.5s ease-in-out;
+      }
+    }
+
+    &-leave {
+      opacity: 1;
+
+      &-active {
+        opacity: 0.01;
+        transition: opacity 1.5s ease-in-out;
+      }
+    }
+  }
+  
+    

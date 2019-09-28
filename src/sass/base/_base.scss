@@ -1,0 +1,39 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  //This define what 1rem is (62.5% of 16px is 10px)
+  font-size: 62.5%;
+  overflow: scroll; 
+  overflow-x: hidden;
+  
+}
+
+div {
+  display: block;
+}
+
+body {
+  box-sizing: border-box;
+  position: relative;
+  @include respond(tab-port) {
+    padding: 0;
+  }
+
+  & input:focus, textarea:focus, select:focus{
+      outline: none;
+  }
+
+  & textarea, select, input, button { outline: none; }
+
+  &::after {
+    content: '';
+    display: block;
+    height: 27rem; /* Set same as footer's height */
+  }
+
+}

@@ -1,0 +1,141 @@
+.btn{
+    &,
+    &:link,
+    &:visited {
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 1.5rem 4rem;
+      display: inline-block;
+      font-family: inherit;
+      border-radius: 10rem;
+      transition: all .2s;
+      position: relative;
+      font-size: 2rem;
+      //CHANGE FOR THE <button> element
+      border: none;
+      cursor: pointer;
+    }
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 1rem 2rem rgba($color-black,.2);
+
+      &::after {
+        transform: scaleX(1.4) scaleY(1.6);
+        opacity: 0;
+      }
+    }
+    &:active,
+    &:focus {
+      transform: translateY(-1px);
+      box-shadow: 0 .5rem 1rem rgba($color-black,.2);
+    }
+    &--white {
+      background-color: $color-white;
+      color:$color-grey-dark;
+
+      &::after {
+        background-color: $color-white ;
+      }
+    }
+
+    &--blue {
+      background-color: $color-primary-dark;
+      color:$color-white;
+
+      &::after {
+        background-color: $color-primary-dark ;
+      }
+    }
+    
+    &::after {
+      content: "";
+      display: inline-block;
+      height: 100%;
+      width: 100%;
+      border-radius: 100px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      transition: all .4s;
+    }
+    
+    &--animated {
+      animation: moveInBottom .5s ease-out .75s;
+      animation-fill-mode: backwards;
+    }
+    
+    &__action {
+      position: absolute;
+      height: 3.6rem;
+      width: 12rem;
+      border-radius: 1.6rem;
+      text-align: left;
+      right: 3rem;
+      bottom: 2.2rem;
+      padding-left: 1rem;
+      font-size: $default-font-size;
+      z-index: 1;
+
+      &:hover {
+        cursor: pointer;
+        animation: jelly 0.5s;
+      }
+
+      &--post {
+        position: absolute;
+        font-size: 1.5vw;
+        bottom: 7%;
+        right: 5rem;
+        width: 13.5rem;
+        height: 5rem;
+        border-radius: 4.8rem;
+        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+        background-color: #efefef;
+      }
+
+      &--paw {
+        position: absolute;
+        width: 2.2rem;
+        height: 1.9rem;
+        right: 1rem;
+        top: .7rem;
+        
+
+        &--post {
+          position: absolute;
+          width: 3rem;
+          height: 3rem;
+          right: 1rem;
+          top: 1rem;
+        }
+      }
+    }
+}
+
+.btn-text {
+  &:link, 
+  &:visited {
+    font-size: $default-font-size;
+    color: $color-primary;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 1px solid $color-primary;
+    padding: 3px;
+    transition: all .2s;
+  }
+
+  &:hover {
+    background-color: $color-primary;
+    color: $color-white;
+    box-shadow: 0 1rem 2rem rgba($color-black, .15);
+    transform: translateY(-2px);
+  }
+
+  &:active {
+    box-shadow: 0 .5rem 1rem rgba($color-black, .15);
+    transform: translateY(0);
+  }
+
+  
+}

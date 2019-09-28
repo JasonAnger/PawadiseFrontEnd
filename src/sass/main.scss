@@ -1,0 +1,31 @@
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/base";
+@import "base/animation";
+@import "base/typography";
+@import "base/utilities";
+
+@import "components/button";
+@import "components/compositions";
+@import "components/card";
+@import "components/burger-menu";
+@import "components/container";
+@import "components/box";
+@import "components/info";
+
+@import "layout/header";
+@import "layout/grid";
+@import "layout/footer";
+@import "layout/navigation";
+@import "layout/page";
+
+@import "pages/home";
+@import "pages/login";
+@import "pages/contact";
+@import "pages/news";
+@import "pages/profile";
+@import "pages/gallery";
+@import "pages/store";
+

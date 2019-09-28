@@ -1,0 +1,124 @@
+.contact {
+    margin-top: 5rem;
+
+    &__title {
+        position: relative;
+        left: 7vw;
+        color: #ec1010;
+        font-size: 2vw;
+        font-weight: 400;
+        text-align: left;
+    }
+
+    &__form {
+        padding: 0 2vw;
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-around;
+        margin: 7rem 0;
+    }
+
+    &__left {
+        position: relative;
+        margin-left: 4%;
+        width: 40vw;
+    }
+    
+    &__right {
+        position: relative;
+        height: 46rem;
+        width: 50vw;
+        min-width: 20vw;
+        transform: translateY(-5.5xrem);
+        
+        &--title {
+            position: absolute;
+            width: 20rem;
+            top: 0;
+        }
+
+        &--text-area {
+            position: absolute;
+            top: 5rem;
+            width: 64rem;
+            height: 40.3rem;
+            border-radius: 3.5rem;
+            box-shadow: 0 .3rem .6rem 0 rgba(0, 0, 0, 0.16);
+            border: solid .1rem rgba(112, 112, 112, 0.3);
+            background-color: #f3f3f3;
+
+            &-input {
+                position: absolute;
+                left: 2.5rem;
+                top: 2.5rem;
+                width: 58.8rem;
+                height: 35.6rem;
+                resize: none;
+                background: transparent;
+                border-top: transparent !important;
+                border-left: transparent !important;
+                border-right: transparent !important;
+                border-bottom: .4rem transparent !important;
+                font-size: $default-font-size;
+                font-family: inherit;
+                font-weight: 400;
+                color: $color-black;
+            }
+        }
+    }
+
+    &__label {
+        color: $color-black;
+        font-size: 3rem;
+        font-weight: 700;
+        text-align: left;
+    }
+    
+    &__text-field {
+        position: relative;
+        height: 9rem;
+        width: 55.2rem;
+        border-radius: 1.6rem;
+        box-shadow: 0 .3rem .6rem 0 rgba(0, 0, 0, 0.16);
+        border: solid .1rem rgba(112, 112, 112, 0.3);
+        background-color: #f3f3f3;
+    }
+
+    &__input {
+        position: absolute;
+        background: transparent;
+        border-top: transparent !important;
+        border-left: transparent !important;
+        border-right: transparent !important;
+        border-bottom: .4rem transparent !important;
+        font-size: 2rem;
+        font-weight: 400;
+        font-family: inherit;
+        width: 55rem;
+        color: $color-black;
+        padding: 3.2rem;
+        &:required { box-shadow: none }
+    }
+
+    &__submit {
+        position: relative;
+        padding: 10rem 0;
+        
+
+        &--btn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(100%, 0%);
+            width: 9vw;
+            height: 6.5vh;
+            border-radius: 2.3rem;
+            box-shadow: 0 .3rem .6rem 0 rgba(0, 0, 0, 0.16);
+            background-color: #ff5836;
+            font-size: 2vw;
+            color: $color-white;
+            cursor: pointer;
+            text-align: center;
+        }
+    }
+}

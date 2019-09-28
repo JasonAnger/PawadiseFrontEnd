@@ -1,0 +1,106 @@
+.header {
+    height: 100vh;
+    background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary-light,0.2),
+      rgba($color-primary-dark, 0.7)),
+    url(../img/background-5.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+    position: relative;
+
+    ///header for SHOP page
+    &--shop {
+      height: 100vh;
+      background-image: 
+      url('../img/shop-bg.png');
+      background-repeat: no-repeat;
+      background-size: 100% 100%; 
+      background-position: center;
+      position: relative;
+    }
+
+    //header for SERVICE Page
+
+    &--service {
+      height: 100vh;
+      background-image: 
+      url(../img/service-bg.png);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;  
+      background-position: center;
+      position: relative;
+    }
+
+    &--contact {
+      height: 100vh;
+      background-image: 
+      url(../img/contact-bg.png);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;  
+      background-position: center;
+      position: relative;
+    }
+
+    &--news {
+      height: 100vh;
+      background-image: 
+      url(../img/news-bg.png);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;  
+      background-position: center;
+      position: relative;
+    }
+
+    &--profile {
+      height: 100vh;
+      background-image: 
+      url(../img/profile-bg.png);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;  
+      background-position: center;
+      position: relative;
+    }
+
+    &--gallery {
+      height: 100vh;
+      background-image: 
+      url(../img/gallery-bg.png);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;  
+      background-position: center;
+      position: relative;
+    }
+
+
+    &__logo-box{
+      position: absolute;
+      z-index: 1;
+      top: 4.5rem;
+      left: 6rem;
+
+      & img {
+        width: 30%;
+        height: 30%;
+      }
+    }
+  
+    &__logo{
+      height: 3.5rem;
+      &-main {
+        max-width: 50%;
+        max-height: 50%;
+      }
+    }
+  
+    &__text-box{
+      position: absolute;;
+      top: 40%;
+      left: 50%;
+      transform: translate(4%, -17%);
+      text-align: center;
+    }
+  }
+  
+  
